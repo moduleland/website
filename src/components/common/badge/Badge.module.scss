@@ -1,0 +1,14 @@
+
+@import "../../../styles/Colors.module";
+
+.label {
+  padding: 0.2em 0.6em;
+  border-radius: 0.3em;
+  border: 1px solid $color-secondary-variant;
+  color: $color-secondary-variant;
+  line-height: 1em;
+
+  &.small {
+    font-size: 12px;
+  }
+}

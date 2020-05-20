@@ -1,0 +1,102 @@
+
+@import "../../../../styles/Colors.module";
+
+
+
+.item {
+  padding: 0.5em 1em;
+  background-color: $color-background;
+
+  .tab {
+    user-select: none;
+    display: grid;
+    grid-template-columns:
+            fit-content(100%)
+            auto;
+    grid-column-gap: 0.5em;
+
+    .info {
+      color: black;
+
+      .title {
+        color: black;
+        font-weight: normal;
+        line-height: 1.5em;
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+
+    .open {
+      color: black;
+      cursor: pointer;
+
+      .icon {
+        float: right;
+
+      }
+    }
+
+    .icon {
+      //color: $color-secondary-variant;
+      cursor: pointer;
+
+      &.wip {
+        color: white;
+      }
+    }
+  }
+  .content {
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: auto fit-content(100%);
+    column-gap: 1em;
+
+    .temporalCode {
+      user-select: none;
+      display: flex;
+      line-height: 1.5em;
+      //color: $color-primary-variant;
+      cursor: pointer;
+
+      .title {
+        cursor: pointer;
+        margin-left: 0.5em;
+      }
+    }
+    .temporalCodeContent {
+      padding: 0.5em 1em;
+
+      .expireOn {
+        margin-top: 0.5em;
+
+        .time {
+          color: $color-primary-variant;
+
+          &.expired {
+            color: $color-error;
+          }
+        }
+      }
+
+      .consoleCommand {
+        margin-top: 0.5em;
+      }
+    }
+
+    .deleteButton {
+      cursor: pointer;
+      display: inline-flex;
+      line-height: 1.5em;
+      color: $color-error;
+
+      label {
+         cursor: pointer;
+      }
+    }
+  }
+}

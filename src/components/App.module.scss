@@ -1,0 +1,27 @@
+@import "../styles/Colors.module";
+
+body {
+  margin: 0;
+  font-family: Inter var,system-ui,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,
+    Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: white;
+  a {
+    &:visited, &:link {
+      color: $color-primary-variant;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+
+  main {
+    padding: 2em;
+
+    section {
+      padding: 1em 2em;
+    }
+  }
+}

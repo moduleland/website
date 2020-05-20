@@ -1,0 +1,23 @@
+@import "../../../styles/Colors.module";
+
+.button {
+  display: flex;
+  color: white;
+  background-color: $color-primary;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 16px;
+  border: 1px solid $color-primary;
+
+  &.buttonInline {
+    color: $color-primary;
+    background-color: white;
+  }
+  &.buttonSmall {
+    padding: 0.25em 0.5em;
+    font-size: 16px;
+    line-height: 1em;
+  }
+}

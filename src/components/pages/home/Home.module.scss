@@ -1,0 +1,13 @@
+
+.content {
+  display: grid;
+  grid-template-columns: auto 40%;
+  grid-column-gap: 1em;
+
+  .rightSide {
+    .title {
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+  }
+}

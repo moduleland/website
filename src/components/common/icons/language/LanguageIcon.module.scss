@@ -1,0 +1,19 @@
+
+.icon {
+
+  &.javascript {
+    color: #F0DB4F;
+  }
+
+  &.typescript {
+    color: #007acc;
+  }
+
+  &.rust {
+    color: #e43816;
+  }
+
+  &.webassembly {
+    color: #664ef1;
+  }
+}

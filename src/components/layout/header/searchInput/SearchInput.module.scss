@@ -1,0 +1,26 @@
+
+@import "../../../../styles/Colors.module";
+
+.search {
+  display: grid;
+  grid-template-columns: fit-content(100%) minmax(0, auto) fit-content(100%);
+
+  .icon {
+    padding: 0.5em 0 0.5em 1em;
+    border: 1px solid $color-primary;
+    border-right: 0;
+    color: $color-primary;
+  }
+
+  input {
+    padding: .5em 1em;
+    border: 1px solid $color-primary;
+    border-left: 0;
+    font-size: 16px;
+
+    color: black;
+    &::placeholder {
+      color: $color-surface;
+    }
+  }
+}

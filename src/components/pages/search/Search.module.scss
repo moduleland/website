@@ -1,0 +1,32 @@
+
+
+@import "../../../styles/Colors.module";
+
+.moduleList {
+
+  .moduleItem {
+    display: grid;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      padding-bottom: 1em;
+      border-bottom: 1px solid $color-background;
+    }
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+
+    .title {
+      color: black;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .description {
+      color: $color-secondary;
+      font-size: 14px;
+      margin-left: 2em;
+    }
+
+  }
+}

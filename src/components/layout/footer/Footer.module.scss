@@ -1,0 +1,29 @@
+@import "../../../styles/Colors.module";
+
+.footer {
+  border-top: 1px solid $color-background;
+  margin: 1em 2em;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 10em;
+
+  .upper {
+    font-style: italic;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    color: $color-surface;
+  }
+
+  .socialRow {
+    margin-bottom: 1em;
+
+    .icon {
+      color: $color-surface;
+      margin: 0 3em;
+    }
+  }
+
+
+}

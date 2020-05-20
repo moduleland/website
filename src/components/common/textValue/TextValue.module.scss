@@ -1,0 +1,13 @@
+@import "../../../styles/Colors.module";
+
+.content {
+  display: inline-block;
+
+  .title {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    color: $color-surface;
+  }
+  font-size: 0.9em;
+}

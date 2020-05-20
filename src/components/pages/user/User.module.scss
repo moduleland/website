@@ -1,0 +1,83 @@
+
+@import "../../../styles/Colors.module";
+
+.content {
+  display: grid;
+  grid-template-columns: auto 70%;
+  grid-column-gap: 1em;
+
+  .user {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1em;
+
+    .avatar {
+      border-radius: 1em;
+      width: 13em;
+      height: 13em;
+      background-size: cover;
+      box-shadow: 0 0.2em 0.35em $color-surface;
+      margin: 1em 0;
+    }
+
+    .name {
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      font-size: 14pt;
+    }
+
+    .login {
+      font-style: italic;
+      color: #929292;
+      margin-bottom: 1em;
+      font-weight: 600;
+    }
+
+    .github {
+      margin-top: 1em;
+    }
+  }
+
+  .rightSide {
+    padding-left: 2em;
+
+    .title {
+      font-weight: bold;
+      line-height: 1.5em;
+    }
+
+    .moduleList {
+      margin-top: 2em;
+
+      .moduleItem {
+        display: grid;
+        cursor: pointer;
+
+        &:not(:last-child) {
+          padding-bottom: 1em;
+          border-bottom: 1px solid $color-background;
+        }
+        &:not(:first-child) {
+          margin-top: 1em;
+        }
+
+        .title {
+          color: black;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        .description {
+          color: $color-primary;
+          font-size: 14px;
+          font-weight: 400;
+          margin-left: 2em;
+        }
+
+      }
+    }
+  }
+}

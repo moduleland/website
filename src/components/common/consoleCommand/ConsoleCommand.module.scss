@@ -1,0 +1,51 @@
+
+@import "../../../styles/Colors.module";
+@import "../../../styles/Animations.module";
+
+.consoleCommand {
+  display: grid;
+  grid-template-columns: fit-content(100%) auto;
+  cursor: pointer;
+  user-select: none;
+
+  & > * {
+    font-size: 10pt;
+
+    &:first-child {
+      margin-right: 0.25em;
+    }
+  }
+
+  .content {
+    overflow: hidden;
+    position: relative;
+
+    div {
+      position: absolute;
+
+      &:first-child {
+        top: 0;
+        transition: top .2s;
+      }
+      &:last-child {
+        top: 1.5em;
+        transition: top .2s;
+      }
+    }
+
+    &.copied {
+      //animation: shake 1s infinite;
+
+      div {
+        &:first-child {
+          top: -1.5em;
+        }
+        &:last-child {
+          top: 0;
+        }
+      }
+    }
+
+
+  }
+}

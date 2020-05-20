@@ -1,0 +1,36 @@
+@import "../../../styles/Colors.module";
+
+header {
+  display: grid;
+  padding: 2em 2em 0 2em;
+  grid-template-columns: fit-content(100%) auto;
+  column-gap: 2em;
+
+  .title {
+    color: $color-primary-variant;
+
+    display: grid;
+    grid-template-columns: 3em auto;
+
+    .text {
+      margin-top: 1em;
+      font-size: 24px;
+
+      .help {
+        margin-left: 0.25em;
+      }
+    }
+  }
+  .dino {
+    cursor: pointer;
+  }
+
+  .navigator {
+    border-bottom: 1px solid $color-background;
+    .searchBar {
+      display: grid;
+      grid-template-columns: auto fit-content(100%);
+      grid-column-gap: 1em;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+
+@import "../../../styles/Colors.module";
+
+.container {
+
+  display: grid;
+  grid-template-columns: auto 20%;
+  grid-column-gap: 1em;
+
+  .userContainer {
+    .clickable {
+      display: inline-flex;
+      padding: 1em 0.5em;
+      cursor: pointer;
+      float: right;
+    }
+  }
+  .modulesContainer {
+
+    .refresh {
+      display: flex;
+      padding: calc(0.5em + 1px) 1em;
+      cursor: pointer;
+      color: $color-surface;
+    }
+    .selectorContainer {
+      margin-bottom: 1em;
+      display: grid;
+      grid-template-columns: auto fit-content(100%) fit-content(100%);
+    }
+
+    .listTitle {
+      font-weight: 800;
+    }
+
+    .listContainer {
+      margin-top: 1em;
+      grid-template-rows: auto;
+      display: grid;
+      grid-row-gap: 1em;
+    }
+
+  }
+}
