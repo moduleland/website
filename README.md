@@ -1,5 +1,5 @@
 # https://module.land
-![CI/CD](https://github.com/moduleland/website/workflows/CI/CD/badge.svg)
+![](https://dev.azure.com/moduleland/website/_apis/build/status/website-CI?branchName=master)
 
 # Utils
 - [regex online](https://regex101.com/)
